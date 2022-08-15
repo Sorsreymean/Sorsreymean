@@ -1,0 +1,32 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+<template>
+  <div>
+    <SectionFaceAzureDesktopRelease />
+    <SectionFaceAzureDesktopV1331 />
+    <SectionFaceAzureDesktopV1321 />
+    <SectionFaceAzureDesktopV1302 />
+    <SectionFaceAzureDesktopV1301 />
+    <SectionFaceAzureDesktopV12 />
+    <SectionFaceAzureDesktopV11 />
+  </div>
+</template>
+
+<script>
+export default {
+  head: {
+    title: 'my website Slug',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'my website description'
+      }
+    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+  }
+}
+</script>
+
+<style></style>

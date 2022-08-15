@@ -1,0 +1,104 @@
+<template>
+<div>
+    <Chooseplan></Chooseplan>
+    <DesktopOnlinePricing></DesktopOnlinePricing>
+    <DesktopPricing></DesktopPricing>
+  <section>
+     <div class=" my-12 2xl:mx-80 xl:mx-24 md:text-md border lg:hidden">
+                <div class="border-b py-xl-20 flex justify-between">
+                    <router-link to="/pricing/desktop-1price"><button type="button" class="m-2 border p-4 rounded"><i class="pi pi-chevron-left" style="font-size:25px"></i></button>
+                    </router-link>
+                    <p class="text-4xl font-semibold p-4 text-center">2 User</p>
+                    <router-link to="/pricing/desktop-3price"><button type="button" class="m-2 border p-4 rounded"><i class="pi pi-chevron-right" style="font-size:25px"></i></button>
+                    </router-link>
+                </div>
+                <div class="text-center leading-10 sm:block">
+                    <hr>
+                    <p class="font-semibold text-2xl p-4">$56/month</p>
+                    <p class="text-lg">Billed as $672/year</p>
+                    <p class="text-sm p-4">Annual subscription</p>
+                    <router-link to="/contact"><button class="border rounded-full text-white bg-cyan-600 w-28 h-8 my-6 text-center pt-0 text-sm hover:bg-cyan-900" type="button">BUY NOW</button></router-link>
+                </div>
+            <div class="grid grid-cols-3">
+                <div class="grid col-span-2 text-lg   font-semibold border-y py-1 pl-2">
+                    <div class="pt-1 flex"><i class="pi pi-angle-down" style="font-size:20px"></i>
+                    <p class="ml-2">Print Forms</p></div>
+                </div>
+                <div class="text-green-600 m-auto w-full border-y py-2 pl-2 text-center"  >
+                    <span class="ml-20"><i class="pi pi-check" style="font-size:20px"></i></span>
+                </div>
+                
+                <div class="grid col-span-2 text-lg   font-semibold border-b py-1 pl-2">
+                    <div class="pt-1 flex"><i class="pi pi-angle-down" style="font-size:20px"></i>
+                    <p class="ml-2">Payroll Management</p></div>
+                </div>
+                <div class="text-green-600 m-auto w-full border-b py-2 pl-2 text-center"  >
+                    <span class="ml-20"><i class="pi pi-check" style="font-size:20px"></i></span>
+                </div>
+                
+               <div class="grid col-span-2 text-lg   font-semibold border-b py-1 pl-2">
+                    <div class="pt-1 flex"><i class="pi pi-angle-down" style="font-size:20px"></i>
+                    <p class="ml-2">Monthly Tax</p></div>
+                </div>
+                <div class="text-green-600 m-auto w-full border-b py-2 pl-2 text-center"  >
+                    <span class="ml-20"><i class="pi pi-check" style="font-size:20px"></i></span>
+                </div>
+               <div class="grid col-span-2 text-lg   font-semibold border-b py-1 pl-2">
+                    <div class="pt-1 flex"><i class="pi pi-angle-down" style="font-size:20px"></i>
+                    <p class="ml-2">Custom Report</p></div>
+                </div>
+                <div class="text-green-600 m-auto w-full border-b py-2 pl-2 text-center"  >
+                    <span class="ml-20"><i class="pi pi-check" style="font-size:20px"></i></span>
+                </div>
+                <div class="grid col-span-2 text-lg   font-semibold border-b py-1 pl-2">
+                    <div class="pt-1 flex"><i class="pi pi-angle-down" style="font-size:20px"></i>
+                    <p class="ml-2">User Management</p></div>
+                </div>
+                <div class="text-green-600 m-auto w-full border-b py-2 pl-2 text-center"  >
+                    <span class="ml-20"><i class="pi pi-check" style="font-size:20px"></i></span>
+                </div>
+                
+                <div class="grid col-span-2 text-lg border-b py-1 pl-2"><p class="pl-8">System Demo</p></div>
+                <div class="text-green-600 m-auto w-full border-b py-2 pl-2 text-center"  >
+                    <span class="ml-20"><i class="pi pi-check" style="font-size:20px"></i></span>
+                </div>
+                
+                <div class="grid col-span-2 text-lg border-b py-1 pl-2"><p class="pl-8">User Mannual</p></div>
+                <div class="text-green-600 m-auto w-full border-b py-2 pl-2 text-center"  >
+                    <span class="ml-20"><i class="pi pi-check" style="font-size:20px"></i></span>
+                </div>
+                
+                <div class="grid col-span-2 text-lg border-b py-1 pl-2"><p class="pl-8">Video Guide</p></div>
+                <div class="text-green-600 m-auto w-full border-b py-2 pl-2 text-center"  >
+                    <span class="ml-20"><i class="pi pi-check" style="font-size:20px"></i></span>
+                </div>
+                
+                <div class="grid col-span-2 text-lg border-b py-1 pl-2"><p class="pl-8">Oreintation</p></div>
+                <div class="text-green-600 m-auto w-full border-b py-2 pl-2 text-center"  >
+                    <span class="ml-20"><i class="pi pi-check" style="font-size:20px"></i></span>
+                </div>
+               
+                <div class="grid col-span-2 text-lg py-1 pl-2"><p class="pl-8">Lifetime Support</p></div>
+                <div class="text-green-600 m-auto w-full py-2 pl-2 text-center"  >
+                    <span class="ml-20"><i class="pi pi-check" style="font-size:20px"></i></span>
+                </div>    
+            </div>               
+    </div>
+    <Callmoreuser></Callmoreuser>
+  </section>
+  </div>
+</template>
+
+<script>
+import Chooseplan from '../../components/Section/chooseplan.vue';
+import DesktopOnlinePricing from '../../components/Section/desktop-online-pricing.vue';
+import DesktopPricing from '../../components/Section/Desktop-pricing.vue';
+import Callmoreuser from '../../components/Section/callmoreuser.vue';
+export default {
+    components: { Chooseplan, DesktopOnlinePricing, DesktopPricing, Callmoreuser }
+}
+</script>
+
+<style>
+
+</style>
